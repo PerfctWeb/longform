@@ -52,8 +52,8 @@ class MediaUtils:
                 context_logger.error("failed to get video info from first video")
                 return False
 
-            target_width = first_video_info.get("width", 1080)
-            target_height = first_video_info.get("height", 1920)
+            target_width = first_video_info.get("width", 1920)
+            target_height = first_video_info.get("height", 1080)
             target_dimensions = f"{target_width}:{target_height}"
 
             context_logger.bind(
