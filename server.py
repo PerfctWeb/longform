@@ -323,9 +323,9 @@ def generate_captioned_video(
     background_tasks: BackgroundTasks,
     background_id: str = Form(..., description="Background image ID"),
     text: Optional[str] = Form(None, description="Text to generate video from"),
-    width: Optional[int] = Form(1080, description="Width of the video (default: 1080)"),
+    width: Optional[int] = Form(1920, description="Width of the video (default: 1080)"),
     height: Optional[int] = Form(
-        1920, description="Height of the video (default: 1920)"
+        1080, description="Height of the video (default: 1920)"
     ),
     audio_id: Optional[str] = Form(
         None, description="Audio ID for the video (optional)"
